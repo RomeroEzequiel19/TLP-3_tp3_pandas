@@ -8,10 +8,7 @@ def analisis_estadistico(edades):
     if not isinstance(edades, list) or len(edades) == 0:
         return "La lista se encuentra vacía o no es una lista"
     
-    # Se verifica si todos los elementos de la lista son numéricos
-    for valor in edades:
-        if not isinstance(valor, (int, float)):
-            return "No todos los elementos de la lista son numéricos"
+   
     
     # Se crea un DataFrame con las edades sin repetir y ordenadas de menor a mayor
     data_frame = pd.DataFrame(sorted(set(edades)), columns=['Edades'])
@@ -33,7 +30,7 @@ def analisis_estadistico(edades):
 
 
 # Se crea una lista de edades
-edades_alumnos = [19, 29, 19, 22, 23, 19, 30, 19, 19, 19, 20, 20, 20, 18, 22, 19, 34, 34, 21, 21, 22, 28, 29, 19, 20, 19, 25, 28, 21, 22]
+edades_alumnos = [19, 29, 19, 22, 23, 19, 30, "19", 19, 19, 20, 20, 20, 18, 22, 19, 34, 34, 21, 21, 22, 28, 29, 19, 20, 19, 25, 28, 21, 22]
 
 # Se almacena en una variable el resultado de la función y se envía como la lista de edades
 resultado = analisis_estadistico(edades_alumnos)
