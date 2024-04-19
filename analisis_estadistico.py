@@ -33,7 +33,7 @@ def analisis_estadistico(edades):
 
 
 # Se crea una lista de edades
-edades_alumnos = [19, 29, 19, 22, 23, 19, 30, "19", 19, 19, 20, 20, 20, 18, 22, 19, 34, 34, 21, 21, 22, 28, 29, 19, 20, 19, 25, 28, 21, 22]
+edades_alumnos = [19, 29, 19, 22, 23, 19, 30, 19, 19, 19, 20, 20, 20, 18, 22, 19, 34, 34, 21, 21, 22, 28, 29, 19, 20, 19, 25, 28, 21, 22]
 
 # Se almacena en una variable el resultado de la función y se envía como argumento la lista de edades
 resultado = analisis_estadistico(edades_alumnos)
